@@ -2,7 +2,7 @@
 Local Analysis of [co]Variant Association (LAVA, Werme et al.) Analysis
 
 
-#lava.R : analysis script for running LAVA across all genomic loci
+# lava.R : analysis script for running LAVA across all genomic loci
 This R script runs bivariate genetic correlation analysis across all genomic loci in the locus file which you've provided. If you are interested in analysing the local rg between a large amount of phenotypes, it is best to use a cluster computer. The script can be called from the command line:
 
 ```
