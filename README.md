@@ -17,6 +17,7 @@ Example input files:
 - ***"cad;alz"*** : in this example, we analyse the local correlation between these two phenotypes: coronary artery disease (cad) and Alzheimer's disease (alz)
 - ***"cad.alz"*** : specifies the prefix of the output files
 
+
 **R Script**
 
 ```
