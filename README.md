@@ -10,7 +10,7 @@ lava.R "g1000_eur" "test.loci" "input.info.file" "sample.overlap.file" "cad;alz"
 ```
 
 your input files:
-- ***g1000_eur*** : the reference genotype data (e.g. 1000 genomes). Pre-processed data can be found [here](https://ctg.cncr.nl/software/magma).
+- ***g1000_eur*** : the reference genotype data (e.g. 1000 genomes). Pre-processed input data can be found [here](https://ctg.cncr.nl/software/magma).
 - ***test.loci*** : the locus definition file
 - ***input.info.file*** : used for easy processing of multiple phenotypes
 - ***sample.overlap.file*** : (optional) provide if your GWAS studies have overlapping subjects
