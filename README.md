@@ -9,7 +9,7 @@ This R script runs bivariate genetic correlation analysis across all genomic loc
 lava.R "g1000_eur" "test.loci" "input.info.file" "sample.overlap.file" "cad;alz" "cad.alz"
 ```
 
-Example input files:
+In this example:
 - ***g1000_eur*** : the reference genotype data (e.g. 1000 genomes). Pre-processed input data can be found [here](https://ctg.cncr.nl/software/magma).
 - ***test.loci*** : the locus definition file
 - ***input.info.file*** : used for easy processing of multiple phenotypes
@@ -18,7 +18,8 @@ Example input files:
 - ***"cad.alz"*** : specifies the prefix of the output files
 
 
-**R Script**
+
+**Complete R Script**
 
 ```
 # command line arguments, specifying input/output file names and phenotype subset
