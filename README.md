@@ -1,9 +1,17 @@
-# lava_protocol
-Local Analysis of [co]Variant Association (LAVA, Werme et al.) Analysis
+# LAVA
+This tutorial will show you how to use Local Analysis of [co]Variant Association (LAVA, Werme et al.) Analysis to estimate local genetic correlation between coronary artery disease (CAD) and Alzheimer's disease (AD).
 
+## Local genetic correlation between AD and CAD
+Following the steps of the original [LAVA tutorial]{https://github.com/josefin-werme/LAVA}, I prepared the following files for input.
+- ***Summary statistics*** for the traits of interest. For CAD, I downloaded the summary statistics from the [CARDIoGRAMplusC4D Consortium]{http://www.cardiogramplusc4d.org/data-downloads/} 1000 Genomes-based GWAS. I used summary statistics for Alzheimer’s dementia from [Iris Jansen et al., 2019]{https://www.nature.com/articles/s41588-018-0311-9}, which are available for download from the [CNCR CTGlab]{https://ctg.cncr.nl/software/summary_statistics}. 
+- ***Reference genome***. I used a reference genome of European ancestry, downloaded from the [CNCR CTGlab]{https://ctg.cncr.nl/software/magma}.  
+- ***Sample overlap*** (optional). This file was left out of my analysis since there was no likely overlap between cohorts used for the two GWAS and the reference genome.
+- ***Locus definition file***. 
+- ***Input info file***
+Note: the genomic build of all input files must match. Use [LiftOver]{https://genome.ucsc.edu/cgi-bin/hgLiftOver/} for genomic build conversion. Here, both summary statistics and the reference genome are in build GRChr37/hg19.
 
-# lava.R : analysis script for running LAVA across all genomic loci
-This R script runs bivariate genetic correlation analysis across all genomic loci in the locus file which you've provided. If you are interested in analysing the local rg between a large amount of phenotypes, it is best to use a cluster computer. The script can be called from the command line:
+## lava.R : analysis script for running LAVA across all genomic loci
+This [R script]{https://github.com/GaglianoTaliun-Lab/lava_protocol/blob/main/lava.R} runs a bivariate genetic correlation analysis across all genomic loci in the locus file which you've provided. It is best to use a cluster computer when analysing the local rg between a large amount of phenotypes. The script can be called from the command line:
 
 ```
 lava.R "g1000_eur" "test.loci" "input.info.file" "sample.overlap.file" "cad;alz" "cad.alz"
@@ -19,7 +27,7 @@ In this example:
 
 
 
-**Complete R Script**
+### **Complete R Script**
 
 ```
 # command line arguments, specifying input/output file names and phenotype subset
@@ -59,3 +67,7 @@ write.table(do.call(rbind,b), paste0(out.fname,".bivar.lava"), row.names=F,quote
 
 print(paste0("Done! Analysis output written to ",out.fname,".*.lava"))
 ```
+
+# Sex Stratified Analysis
+Deming et al. [article]{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6280657/} on sex specific predictors of Alzheimer’s disease.
+Dumitrescu et al. [article]{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6736148/} on sex differences in the genetic predictors of Alzheimer’s disease.
