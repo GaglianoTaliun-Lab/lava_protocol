@@ -69,8 +69,11 @@ print(paste0("Done! Analysis output written to ",out.fname,".*.lava"))
 ```
 
 # Sex Stratified Analysis
-Deming et al. [article](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6280657/) on sex specific predictors of Alzheimer’s disease.
-Dumitrescu et al. [article](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6736148/) on sex differences in the genetic predictors of Alzheimer’s disease.
+
+The .loci file for LAVA analysis can be updated by adding the locus descibed in the following articles:
+- Deming et al. [article](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6280657/) on sex specific predictors of Alzheimer’s disease.
+- Dumitrescu et al. [article](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6736148/) on sex differences in the genetic predictors of Alzheimer’s disease.
+The genetic architecture of diseases can change based on sex. It would be more informative to perform genetic correlation analyses on men and women separately.
 
 ### Creating a Miami plot to visualize the differences in association signals between men and women, using EasyStrata and stratified GWAS results on the levels of tau found in the cerebospinal fluid of deceased Alzheimer's patients:
 
