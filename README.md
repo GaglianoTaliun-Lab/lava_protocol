@@ -71,3 +71,20 @@ print(paste0("Done! Analysis output written to ",out.fname,".*.lava"))
 # Sex Stratified Analysis
 Deming et al. [article](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6280657/) on sex specific predictors of Alzheimer’s disease.
 Dumitrescu et al. [article](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6736148/) on sex differences in the genetic predictors of Alzheimer’s disease.
+
+### Creating a Miami plot to visualize the differences in association signals between men and women, using EasyStrata and stratified GWAS results on the levels of tau found in the cerebospinal fluid of deceased Alzheimer's patients:
+
+In R: 
+
+```
+library("EasyStrata")
+EasyStrata("/lava/ecf/CSF_TAU_MIAMI.ecf")
+```
+
+The ecf file will take as input the summary statistics of the results to visualize. 
+Example of the ecf file found [here](https://github.com/GaglianoTaliun-Lab/lava_protocol/blob/main/CSF_TAU_MIAMI.ecf).
+
+##### Output: EasyStrata Miami Plot showing the differences in GWAS results between men and women
+<img src="https://github.com/GaglianoTaliun-Lab/lava_protocol/blob/main/CSF_TAU_miami.png" width="600" height="300">
+
+ 
