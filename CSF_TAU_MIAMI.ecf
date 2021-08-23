@@ -1,15 +1,15 @@
 #################################################################################################################
 #################################################################################################################
 
-DEFINE	--pathOut /lustre04/scratch/faou/lava/EasyStrata-plots/
+DEFINE	--pathOut lava/EasyStrata-plots/
 		--acolIn SNP;EffectAllele;BETA;SE;P;CHR;BP
 		--acolInClasses character;character;numeric;numeric;numeric;numeric;numeric
 
-EASYIN	--fileIn /lustre04/scratch/faou/lava/Sum-stats/Endopheno-CSF-TAU/CSF_TAU_females.txt
+EASYIN	--fileIn lava/CSF_TAU_females.txt
 		--fileInShortName CSF_TAU_female 
 		--fileInTag WOMEN
 
-EASYIN	--fileIn /lustre04/scratch/faou/lava/Sum-stats/Endopheno-CSF-TAU/CSF_TAU_males.txt
+EASYIN	--fileIn lava/CSF_TAU_males.txt
 		--fileInShortName CSF_TAU_male 
 		--fileInTag MEN
 
