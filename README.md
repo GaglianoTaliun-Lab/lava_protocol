@@ -3,7 +3,7 @@ This tutorial will show you how to use Local Analysis of [co]Variant Association
 
 ## Local genetic correlation between AD and CAD
 Following the steps of the original [LAVA tutorial](https://github.com/josefin-werme/LAVA), I prepared the following files for input.
-- ***Summary statistics*** for the traits of interest. For CAD, I downloaded the summary statistics from the [CARDIoGRAMplusC4D Consortium](http://www.cardiogramplusc4d.org/data-downloads/) 1000 Genomes-based GWAS. I used summary statistics for Alzheimer’s dementia from [Iris Jansen et al., 2019](https://www.nature.com/articles/s41588-018-0311-9), which are available for download from the [CNCR CTGlab](https://ctg.cncr.nl/software/summary_statistics). 
+- ***Summary statistics*** for the traits of interest. For CAD, I downloaded the summary statistics from the [CARDIoGRAMplusC4D Consortium](http://www.cardiogramplusc4d.org/data-downloads/) 1000 Genomes-based GWAS (results from 60,801 CAD cases & 123,504 controls). I used summary statistics for Alzheimer’s dementia involving AD cases, proxy cases and controls (effective sample size up to 10,830)  [Iris Jansen et al., 2019](https://www.nature.com/articles/s41588-018-0311-9), which are available for download from the [CNCR CTGlab](https://ctg.cncr.nl/software/summary_statistics). 
 - ***Reference genome***. I used a reference genome of European ancestry, downloaded from the [CNCR CTGlab](https://ctg.cncr.nl/software/magma).  
 - ***Sample overlap*** (optional). This file was left out of my analysis since there was no likely overlap between cohorts used for the two GWAS and the reference genome.
 - ***Locus definition file***. 
